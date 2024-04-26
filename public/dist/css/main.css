@@ -1,0 +1,168 @@
+body{
+	background-color: #B3D7DD;
+	font-family: 'Noto Sans JP', sans-serif';
+}
+div.header{
+	height: 50px;
+}
+div.base{
+	width: 1140px;
+	display: flex;
+	margin: 0 auto;
+}
+div.container{
+	background-color: #f7f7f7;
+	border-radius: 30px;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 20px
+}
+div.left{
+	width: 50%;
+}
+div.right{
+	width: 50%;
+}
+#konzatsu{
+	/* width: 35vw; */
+	width: 80%;
+	height: 540px;
+	text-align: center;
+}
+#matuka{
+	text-align: center;
+}
+#konzatsujokyo{
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	text-align: left;
+}
+#busstate{
+	text-align: center;
+	margin: 12px;
+}
+#konzatsu img{
+	width: 90%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+#syuppatsu{
+	/* width: 40vw; */
+	width: 90%;
+	height: 200px;
+}
+#syuppatsu h2{
+	margin: 10px 0px;
+	text-align: center;
+}
+.swiper{
+	position: relative;
+	width: 100%;
+	height: 140px;
+	font-size: 64px;
+	font-weight: bold;
+	margin: auto;
+}
+.swiper-button-prev{
+	margin: 0;
+	position: relative;
+	top: 50%;
+	left: 5%;
+	transform: translateY(-50%);
+}
+.swiper-button-next{
+	margin: 0;
+	position: relative;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+
+.swiper-slide{
+	text-align: center;
+}
+
+#maniau{
+	position: relative;
+	/* width: 40vw; */
+	width: 90%;
+	height: 320px;
+}
+#maniau h2{
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+}
+#maniaubefore h2{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#buildlist{
+	width: 95%;
+	/* height: 80px; */
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+#maniauafter{
+	display: flex;
+	justify-content: space-around;
+}
+#selectbuild{
+	width: 100px;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+#selectbuild h3{
+	margin: 10px;
+}
+#submit-button {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #19B4F7;
+	border: none;
+	color: white;
+	padding: 8px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    
+#submit-button:hover {
+	background-color: #0056b3;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+.building-option {
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f8f8f8;
+}
+.building-option h3{
+	margin: 10px;
+}
+
+.building-option.selected {
+	border-color: blue;
+	background-color: #e0f0ff;
+}
+
+.hidden {
+	display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#building-selection {
+			display: flex;
+		}
+		
+		.building-option {
+			margin: 5px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			background-color: #f8f8f8;
+		}
+		
+		.building-option.selected {
+			border-color: blue;
+			background-color: #e0f0ff;
+		}
+    
+	</style>
+</head>
+<body>
+	<div id="building-selection">
+		<button class="building-option" data-building="A">A: 憩室棟</button>
+		<button class="building-option" data-building="F">F: 原光棟</button>
+		<button class="building-option" data-building="7">7: 7号棟</button>
+		<button class="building-option" data-building="Q">Q: 荘園</button>
+	</div>
+	<button id="submit-button">送信</button>
+	    
+	<script>
+		document.querySelectorAll('.building-option').forEach(button => {
+			button.addEventListener('click', function() {
+				document.querySelectorAll('.building-option').forEach(btn => btn.classList.remove('selected'));
+				this.classList.add('selected');
+			});
+		});
+
+		document.getElementById('submit-button').addEventListener('click', function() {
+			const selectedBuilding = document.querySelector('.building-option.selected');
+			if (selectedBuilding) {
+				const buildingData = selectedBuilding.getAttribute('data-building');
+				// ここで buildingData を使って何かをする
+				console.log('選択された建物: ' + buildingData);
+				// 例えば、フォームを使ってサーバーに送信することもできます
+			} else {
+			alert('建物を選択してください。');
+			}
+		});
+
+	</script>
+</body>
+</html>
+

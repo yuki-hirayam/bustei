@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>bustime
+    </title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>バスサービス</h1>
+    </div>
+    <div class="base">
+      <div class="left">
+        <div id="konzatsu" class="container">
+          <h2 id="konzatsujokyo">混雑状況</h2>
+          <p>バス停の映像</p>
+          <img src="./img/IMG_8448.jpg" height="300" width="400"  alt="">
+          <h1 id="busstate">かなり混雑</h1>
+          <h2 id="matuka">1本後のバスになりそう</h2>
+        </div>
+      </div>
+      <div class="right">
+        <div id="syuppatsu" class="container">
+          <h2>出発まで</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div id="busitsu"></div>
+                <!-- <h1 id="busitsu"></h1> -->
+              </div>
+              <div class="swiper-slide">
+                <div id="nbusitsu"></div>
+                <!-- <h1 id="nbusitsu"></h1> -->
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div id="maniau" class="container">
+          <h2>間に合う？</h2>
+          <div id="maniauafter" class="hidden">
+            <div id="selectbuild" class="hidden">
+            </div>
+            <div>
+              <h3 id="requiredtime"></h3>
+              <h1 id="maniautext"></h1>
+            </div>
+          </div>
+          <div id="maniaubefore">
+            <h2>建物を選択してください</h2>
+            <div id="buildlist">
+            </div>
+          </div>
+          <button id="submit-button">選択</button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
